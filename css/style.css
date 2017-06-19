@@ -1,0 +1,372 @@
+body {
+	font: 12px/15px Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	background: #fff;
+	overflow-x: hidden;
+	margin-top: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+* {
+	padding-top: 5;
+	padding-right: 0px;
+	padding-bottom: 15;
+	padding-left: 0px;
+	margin: 5 0px 0 0;
+
+}
+/* links */
+a {
+   outline: 0;
+}
+
+a:link {
+font-style: normal;
+	color: #000000;
+	text-decoration: none;
+}
+a:active {
+font-style: normal;
+	color: #000000;
+}
+a:visited {font-style: normal;
+	color: #000000;
+
+}
+a:hover {
+
+	color: #000000;
+	text-decoration: underline;
+}
+
+a img { border: none;
+}
+img a:hover{
+	color: #fff;
+}
+
+
+/* LOGO*/
+div#menu div.container p {
+	font: 12px/15px Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+		overflow-x: hidden;
+		font-style: normal;
+}
+
+
+
+/* main page only, NEWS */
+body.section-1 div#content p{ padding-bottom: 15px;
+}
+
+
+/* MENU */
+#menu {
+	width: 220px;
+	overflow: hidden;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	height: 100%;
+	background-color: transparent;
+	margin-left: 35px;
+	margin-top: 0px;
+
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0 0 12px 0;
+	margin: 0 0 12px 0;
+	line-height: 1.5em;
+	padding-bottom: 5px;
+
+}
+
+
+/*expanding menu stuff */
+
+#menu ul li.section-title {
+
+
+}
+
+
+
+
+
+/*artist images, they fit on the screen */
+
+#content {
+	padding-left: 240px;  /* distance between menu and content */
+	vertical-align: top;
+
+}
+
+.container {
+	padding-top: 50px;
+	padding-left: 25px;
+}
+div.anchored  {
+
+}
+
+p{
+	text-align: justify;
+	color: black;
+}
+
+div.container p a img{
+	font: 12px Arial;
+	text-align: justify;
+	color: black;
+}
+
+
+/* space between image and it's title */
+.container img{
+padding-bottom: 2px;
+}
+
+img{
+width: inherit;
+margin-top: -25px;
+max-height: 74%;  /* magic number to center */
+max-height:80vh;
+	padding-right: 100px;
+	max-width: 1150px;
+}
+
+
+body.section-1 { float: left;
+margin-left: 20px;
+max-width: 780px;
+}
+
+body.section-2, body.section-5, body.section-6, body.section-7, body.section-5 {
+	margin-left: 20px;
+	max-width: 950px;
+	padding-right: 25px;
+}
+
+
+/* H */
+h1 {
+
+	font: bold 12px/15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border-style: none;
+	border-width: 1px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+	width: 815px;
+	opacity: 1;
+	padding-bottom: 1px;
+}
+
+/* VIDEO */
+iframe {
+	margin-top: -20px;
+}
+
+
+/* MOBILE iPhone 5 & 5S in portrait */
+@-ms-viewport{
+  width: device-width;
+  user-scalable:no;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+
+
+div.container {
+	position: absolute;
+	left: 0;
+	margin-right: 32px;
+	font-size: 14px;overflow-x:hidden;
+}
+
+body.section-1 div#content {margin-top:100px;
+}
+
+
+
+p{
+	text-align: justify;
+	color: black;
+}
+#menu {
+	width:100%;
+    height:150px;
+    overflow: hidden;
+    top: -50px;
+    bottom: 0;
+	background-color: #fff;
+	margin-right: auto;
+	margin-left: auto;
+	color: #ffffff;
+	z-index:999;
+padding-bottom:27px;
+
+}
+#menu ul li {
+	float: left;
+	padding-right: 10px;
+
+}
+#menu ul li visited{
+text-decoration:none;
+
+}
+#menu ul li.active a{
+	text-decoration: underline;
+
+}
+#menu pdf {
+	display:none;
+}
+#menu ul a {
+	font-size: 24px;
+	line-height: 28px;
+
+}
+#menu p a {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+
+body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container em{
+	margin-top:30px;
+display:none;
+
+
+}
+body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container{
+	margin-top:60px;
+
+
+}
+body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container p{
+	width:270px;
+line-height: 18px;
+
+
+}
+div.anchored p a img {
+	width:270px;
+
+}
+iframe {
+display:none;
+}
+
+img{
+margin-top: -25px;
+
+
+}
+div.anchored p span {
+	display: none;
+}
+
+
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+div.container {
+	position: absolute;
+	left: 0;
+	margin-right: 32px;
+	font-size: 14px;overflow-x:hidden;
+}
+
+body.section-1 div#content {margin-top:100px;
+}
+
+
+p{
+	text-align: justify;
+	color: black;
+}
+#menu {
+	width:100%;
+    height:150px;
+    overflow: hidden;
+    top: -50px;
+    bottom: 0;
+	background-color: #fff;
+	margin-right: auto;
+	margin-left: auto;
+	color: #ffffff;
+	z-index:999;
+padding-bottom:27px;
+}
+
+#menu ul li {
+	float: left;
+	padding-right: 10px;
+
+}
+#menu ul li visited{
+text-decoration:none;
+
+}
+#menu ul li.active a{
+	text-decoration: underline;
+
+}
+#menu pdf {
+	display:none;
+}
+#menu ul a {
+	font-size: 24px;
+	line-height: 28px;
+
+}
+#menu p a {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container em{
+	margin-top:30px;
+display:none;
+	}
+
+body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container{
+	margin-top:60px;
+}
+
+body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container p{
+	width:510px;
+line-height: 18px;
+}
+
+div.anchored p a img {
+
+}
+
+iframe {
+display:none;
+}
+
+img{
+margin-top: -25px;
+
+}
+div.anchored p span {
+	display: none;
+}
