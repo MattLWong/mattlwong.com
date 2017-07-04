@@ -2,7 +2,7 @@
 layout: default
 title: Wedding w/ Martha and Ernesto
 meta:
-location: Lafayette, CA
+location: Moraga, CA
 time: Friday, 30 June 2017
 priority: 1.0
 category: news
