@@ -1,93 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Personal webpage of Matt Wong</title>
+---
+layout: default
+titleAfter: the titleAfter
+meta: this is the meta for front page
+priority: 1.0
+---
 
-  </head>
-  <body class="section-1">
-    <a href="#"></a>
-      <title>News : Matt Wong</title>
-      <link rel='stylesheet' href='./css/style.css' type='text/css' />
-      <style type="text/css">
-        #img-container p { margin-bottom: 40px;width:2000px; }
-        #img-container p span { line-height: 14px; }
-      </style>
-    </a>
-    <div id="menu">
-      <a href="#">
-      </a>
-        <div class="container">
-          <a href="#">
-          </a>
-          <p>
-            <a href="#"></a>
-            <a href="#">Matt L. Wong</a>
-          </p>
-          <ul>
-            <li>
-              <a href="./projects.html" onclick="do_click();">Projects</a>
-            </li>
-            <li>
-              <a href="./weddings.html">Weddings and Engagements</a>
-            </li>
-            <li>
-              <a href="./portraitsi.html">Portraits I </a>
-            </li>
-            <li>
-              <a href="./portraitsii.html">Portraits II </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="./press.html">Press</a>
-            </li>
-            <li>
-              <a href="./contact.html">Contact</a>
-            </li>
-          </ul>
-          <p>
-            <pdf>
-              <a href="#">Download .PDF</a>
-            </pdf>
-          </p>
-        </div>
-    </div>
-    <div id="content">
-      <div class="container">
-        <!-- text and image -->
-        <p>NEWS</p>
-        <p>
-          <a href="https://www.flickr.com/photos/151679123@N05/albums/72157685071946505" target"_blank"><em>Attempts at Self-Portraits</em></a>
-          <br>
-          I made several attempts to get a decent self-portrait tonight, but it wasn’t easy. I had to manually calibrate the focus after each shot, guessing if I went too short or too long. Then I had to pose. I stuck with the 50mm lens, which is more forgiving in composition and depth of field than the 85mm.  I had only six or seven seconds after I pressed the shutter release to get in position. <br> My favorite pictures are the ones where I’m not looking at the camera. Of course, it looks like I’m contemplating, but there was no time to do anything but pretend. So much of portrait photography is about getting the sitter to act an emotion for the camera, giving them that special freedom to roam through old emotions.
-          <br>
-          Tuesday, 13 June 2017
-        </p>
-        <p>
-          <a href="https://www.flickr.com/photos/151679123@N05/albums/72157682167380883" target"_blank"><em>BART Sessions: Day 18</em></a>
-          <br>
-          Arrived at 8pm, set up 53" white seamless paper, 12 sitters, mostly shot at 50mm at f/11, 1/125 ISO 160 FP 1-2.6. Flash power really depends on sitter's skin tones. The Warrios v Caveliers game 4 championship took place during this same period, hence the rather low turn-out. I managed to squeeze in a few shots in with the Mamiya 7 rangefinder, but had difficulty pushing the radio transceiver into the hot shoe mount. Would like to upgrade to pocket wizards.
-          <br>
-          Downtown Berkeley BART Station
-          <br>
-          Monday, 12 June 2017
-        </p>
-
-        <p>
-          <a href="#" target"_blank"><em>The BART Sessions: Day 17</em></a>
-          <br>
-          Arrived and set up at 1845, and by 1955 the BART patrol officer shooed me off the premises. 13 sitters, all shot at f/11 1/125 ISO 160. I photographed one person before, and although I didn't remember her name, she was interested in having another picture taken (not sure if she got back to me the first time).
-          <br>
-          12th St. Oakland BART station
-          <br>
-          Tuesday, 16 May 2017
-        </p>
+<div id="content">
+  <div class="container news">
+    <!-- text and image -->
+    <p>NEWS</p>
 
 
-        <!-- end text and image -->
-      </div>
-    </div>
+    {% include news-list.html %}
 
-  </body>
-</html>
+    <!-- end text and image -->
+  </div>
+</div>

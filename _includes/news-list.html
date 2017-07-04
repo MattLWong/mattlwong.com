@@ -1,0 +1,16 @@
+{% for story in site.categories.news %}
+<div class="news-item">
+  <a href="{{story.link}}"><em>{{story.title}}</em></a>
+  {{story.content}}
+  {{story.time}}
+</div>
+{% endfor %}
+<!--
+<p>
+  <a href="#" target"_blank"><em>BART Sessions: Day 17</em></a>
+  <br>
+  <br>
+  12th St. Oakland BART station
+  <br>
+  Tuesday, 16 May 2017
+</p> -->

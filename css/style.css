@@ -59,9 +59,23 @@ div#menu div.container p {
 
 
 /* main page only, NEWS */
-body.section-1 div#content p{ padding-bottom: 15px;
+body.section-1 div#content p{
+	padding-bottom: 15px;
 }
 
+body.section-1 div#content .news p {
+	padding: 0px;
+}
+
+/*NEWS ITEMS*/
+body #content .news-item p {
+	margin: 0;
+	padding: 0;
+}
+
+body #content .news-item {
+	margin-bottom: 28px;
+}
 
 /* MENU */
 #menu {
@@ -81,7 +95,6 @@ body.section-1 div#content p{ padding-bottom: 15px;
 #menu ul {
 	list-style: none;
 	margin: 0 0 12px 0;
-	margin: 0 0 12px 0;
 	line-height: 1.5em;
 	padding-bottom: 5px;
 
@@ -94,10 +107,6 @@ body.section-1 div#content p{ padding-bottom: 15px;
 
 
 }
-
-
-
-
 
 /*artist images, they fit on the screen */
 
@@ -139,6 +148,12 @@ max-height: 74%;  /* magic number to center */
 max-height:80vh;
 	padding-right: 100px;
 	max-width: 1150px;
+}
+
+#imgright {
+	width: inherits;
+	padding-left: 100px;
+	padding-right: 0px;
 }
 
 

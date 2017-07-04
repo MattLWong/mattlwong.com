@@ -1,0 +1,4 @@
+markdown: kramdown
+baseurl: mattwong.co
+exclude: ['README.md']
+permalink: pretty
