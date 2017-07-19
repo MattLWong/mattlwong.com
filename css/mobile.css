@@ -1,0 +1,195 @@
+
+/* MOBILE iPhone 5 & 5S in portrait */
+@-ms-viewport{
+  width: device-width;
+  user-scalable:no;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+	div.container {
+		position: absolute;
+		left: 0;
+		margin-right: 32px;
+		font-size: 14px;overflow-x:hidden;
+	}
+
+	body.section-1 div#content {margin-top:100px;
+	}
+
+	p{
+		text-align: justify;
+		color: black;
+	}
+
+	#menu {
+		position: absolute;
+		width:100%;
+    height:150px;
+    overflow: hidden;
+    top: -50px;
+    bottom: 0;
+		background-color: #fff;
+		/*margin-left: 35px;*/
+		color: #ffffff;
+		z-index:999;
+  	padding-bottom:27px;
+	}
+
+	#menu ul li {
+		float: left;
+		padding-right: 10px;
+	}
+
+	#menu ul li visited{
+	text-decoration:none;
+	}
+
+	#menu ul li.active a{
+		text-decoration: underline;
+	}
+
+	#menu pdf {
+		display:none;
+	}
+
+	#menu ul a {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	#menu p a {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container em{
+		margin-top:30px;
+  	display:none;
+	}
+
+	body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container{
+		margin-top:60px;
+	}
+	body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container p{
+		width:270px;
+  	line-height: 18px;
+	}
+
+	div.anchored p a img {
+		width:270px;
+	}
+
+	iframe {
+	   display:none;
+	}
+
+	img{
+  	margin-top: -25px;
+	}
+	div.anchored p span {
+		display: none;
+	}
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+  div.container {
+  	position: absolute;
+  	left: 0;
+  	margin-right: 32px;
+  	font-size: 14px;overflow-x:hidden;
+  }
+
+  body.section-1 div#content {
+  	margin-top:100px;
+  }
+
+
+  p{
+  	text-align: justify;
+  	color: black;
+  }
+
+  #menu {
+  	width:100%;
+    height:150px;
+    overflow: hidden;
+    top: -50px;
+    bottom: 0;
+  	background-color: #fff;
+  	margin-right: auto;
+  	margin-left: auto;
+  	color: #ffffff;
+  	z-index:999;
+  	padding-bottom:27px;
+  }
+
+  #menu ul li {
+  	float: left;
+  	padding-right: 10px;
+  }
+
+  #menu ul li visited{
+  	text-decoration:none;
+  }
+
+  #menu ul li.active a{
+  	text-decoration: underline;
+  }
+
+  #menu pdf {
+  	display:none;
+  }
+
+  #menu ul a {
+  	font-size: 24px;
+  	line-height: 28px;
+  }
+
+  #menu p a {
+  	font-size: 24px;
+  	line-height: 28px;
+  }
+
+  body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container em{
+  	margin-top:30px;
+  	display:none;
+  }
+
+  body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container{
+  	margin-top:60px;
+  }
+
+  body.section-2, body.section-5, body.section-6, body.section-7 .section-5 #content div.container p{
+  	width:510px;
+  	line-height: 18px;
+  }
+
+  div.anchored p a img {
+  }
+
+
+  iframe {
+  display:none;
+  }
+
+  img{
+  margin-top: -25px;
+
+  }
+  div.anchored p span {
+  	display: none;
+  }
+
+  .studio-image {
+  	margin-left: 50px;
+  }
+}
