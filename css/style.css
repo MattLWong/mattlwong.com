@@ -8,8 +8,9 @@ body {
 	width: 100%;
 	height: 100%;
 
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 
@@ -149,7 +150,7 @@ img{
 width: inherit;
 /*margin-top: -25px;*/
 max-height: 74%;  /* magic number to center */
-max-height:80vh;
+/*max-height:80vh;*/
 	padding-right: 100px;
 	max-width: 1150px;
 }
@@ -177,7 +178,7 @@ body.section-2, body.section-5, body.section-6, body.section-7, body.section-5 {
 /* H */
 h1 {
 
-	font: bold 12px/15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 12px/15px Arial, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	border-style: none;
 	border-width: 1px;
 	border-bottom: 1px solid black;

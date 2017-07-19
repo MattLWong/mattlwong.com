@@ -1,0 +1,53 @@
+.slider li {
+    list-style: none;
+    margin: 0;
+}
+
+/*.bx-viewport {
+    overflow: visible !important;
+}
+
+ul.slider li {
+  width: 600px !important;
+}*/
+
+.bx-wrapper {
+  position: relative;
+}
+
+.bx-controls {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+.bx-pager-item {
+  display: inline;
+}
+
+
+.bx-pager-link {
+    background: url(../img/admin/dot.png) 0 -10px no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    text-indent: -9999px;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    overflow: hidden;
+}
+.bx-pager-link:hover,
+.bx-pager .active {
+    background-position: 0 0;
+}
+
+.bx-controls-direction {
+    display: none;
+}
+
+.main {
+    padding: 0 10px;
+}*/
