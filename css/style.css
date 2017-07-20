@@ -17,15 +17,7 @@ body {
 * {
 	padding: 0px;
 	margin: 0px;
-
-	/*font: inherit;
-	text-decoration: inherit;
-	text-align: inherit;
-	color: inherit;*/
-
-	/*background: transparent;*/
 }
-/* links */
 
 
 a:link {
@@ -34,31 +26,22 @@ font-style: normal;
 	text-decoration: none;
 }
 a:active {
-font-style: normal;
-	color: #000000;
+	font-style: normal;
 }
 a:visited {font-style: normal;
 	color: #000000;
-
-}
-a:hover {
-
-	color: #000000;
-	text-decoration: underline;
 }
 
-a img { border: none;
+.nav a:hover {
+	color: #B28CBA;
 }
+
+
 img a:hover{
 	color: #fff;
 }
 
-
 /* LOGO*/
-div#menu div.container p {
-		overflow-x: hidden;
-		font-style: normal;
-}
 
 .title-name {
 	margin-top: 0px;
@@ -90,7 +73,7 @@ body #content .news-item {
 
 /* MENU */
 #menu {
-	width: 220px;
+	width: 185px;
 	overflow: hidden;
 	top: 0px;
 	bottom: 0;
@@ -111,21 +94,19 @@ body #content .news-item {
 
 }
 
-#menu ul li.section-title {
-}
-
 #content {
 	padding-left: 220px;  /* distance between menu and content */
 	vertical-align: top;
 
 }
 
+.nav {
+	position: fixed;
+}
+
 .container {
 	padding-top: 50px;
 	padding-left: 25px;
-}
-div.anchored  {
-
 }
 
 p{
@@ -134,50 +115,40 @@ p{
 	margin-bottom: 25px;
 }
 
-div.container p a img{
-	font: 12px Arial;
-	text-align: justify;
-	color: black;
+img.imgleft {
+	padding-right: 100px;
 }
 
-
-/* space between image and it's title */
-.container img{
-padding-bottom: 2px;
+img.imgright {
+	padding-left: 100px;
 }
 
-img{
-width: inherit;
-/*margin-top: -25px;*/
-max-height: 74%;  /* magic number to center */
-/*max-height:80vh;*/
+.portraits img {
+	margin-bottom: 10px;
+}
+
+.container img {
+	padding-bottom: 2px;
+}
+
+img {
+	width: inherit;
+	max-height: 74%;
 	padding-right: 100px;
 	max-width: 1150px;
 }
 
-#imgright {
-	width: inherits;
-	padding-left: 100px;
-	padding-right: 0px;
-}
-
-
-body.section-1 {
+body {
 	float: left;
-	margin-left: 20px;
-	max-width: 800px;
+	/*margin-left: 20px;*/
+	max-width: 820px;
 }
 
-body.section-2, body.section-5, body.section-6, body.section-7, body.section-5 {
-	margin-left: 20px;
-	max-width: 950px;
-	padding-right: 25px;
-}
+
 
 
 /* H */
 h1 {
-
 	font: bold 12px/15px Arial, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	border-style: none;
 	border-width: 1px;
@@ -188,7 +159,27 @@ h1 {
 	padding-bottom: 1px;
 }
 
-/* VIDEO */
-iframe {
-	margin-top: -20px;
+/*Wedding blurb is default invisible*/
+.container article.wedding-blurb {
+	/*background-color: yellow;*/
+	display: none;
+}
+
+.container a.read-more {
+	text-decoration: underline;
+}
+
+/*Make wedding blurb visible*/
+
+.container article.visible {
+	display: block;
+	transition: width 2s;
+}
+
+.container a.invisible {
+	display: none;
+}
+
+blockquote {
+	margin: 10px 80px 10px 20px;
 }
