@@ -1,9 +1,12 @@
-{% for story in site.categories.news %}
-<div class="news-item">
-  <a href="{{site.baseurl}}{{story.url}}"><em>{{story.title}}</em></a>
-  <br>
-  {{story.summary}}
-  <br>
-  {{story.time}}
+
+<div class="news-feed">  
+  {% for story in site.categories.news %}
+  <div class="news-item">
+    <a href="{{site.baseurl}}{{story.url}}"><em>{{story.title}}</em></a>
+    <br>
+    {{story.summary}}
+    <br>
+    {{story.time}}
+  </div>
+  {% endfor %}
 </div>
-{% endfor %}

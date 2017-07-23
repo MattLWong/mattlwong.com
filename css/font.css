@@ -1,0 +1,32 @@
+.shortcut-links {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 110%;
+  letter-spacing: 1.65px;
+}
+
+.shortcut-links li {
+  margin-bottom: 6px;
+}
+
+#title-name {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 225%;
+}
+
+.content p,
+.content .news-feed,
+.container blockquote {
+  line-height: 1.7;
+  /*background-color: red;*/
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
+
+.content h3 {
+  /*background-color: yellow;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

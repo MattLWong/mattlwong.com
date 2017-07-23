@@ -1,10 +1,10 @@
 jQuery(function($) {
     $('.slider').bxSlider({
         adaptiveHeight: true,
-        mode: 'fade',
-        auto: true
+        // mode: 'fade'
+        // auto: true
     });
-    $('.slider-home').bxSlider({
+    $('.slider-auto').bxSlider({
         adaptiveHeight: true,
         mode: 'fade',
         auto: true
