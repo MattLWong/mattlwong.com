@@ -16,7 +16,7 @@ ul.slider li {
 }
 
 .bx-controls {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
   left: 0;
   z-index: 100;
@@ -39,15 +39,57 @@ ul.slider li {
     outline: 0;
     overflow: hidden;
 }
+
 .bx-pager-link:hover,
 .bx-pager .active {
     background-position: 0 0;
 }
 
-.bx-controls-direction {
+.no-controls .bx-controls-direction {
     display: none;
 }
 
+/*DIRECTION CONTROLS (NEXT / PREV)*/
+
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(../img/admin/controls.png) no-repeat 0 -32px;
+  opacity: .7;
+}
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url(../img/admin/controls.png) no-repeat -43px -32px;
+  opacity: .7;
+}
+
+.bx-wrapper .bx-prev:hover {
+  background-position: 0 0;
+  opacity: 1;
+}
+
+.bx-wrapper .bx-next:hover {
+  background-position: -43px 0;
+  opacity: 1;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -38px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+
+
 .main {
     padding: 0 10px;
-}*/
+}
