@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="responsive-fit">
+  {{ content }}
+</div>
+
+
+<script type="text/javascript">
+let height = $( window ).innerHeight();
+let width = $( window ).innerWidth();
+let vWidth = 0.75 * height - 50;
+let hWidth = width - 335 - 24;
+
+if (width > 768 ) {
+  if (vWidth < hWidth) {
+    if (vWidth > 652) {
+      $(".responsive-fit").css("width",652);
+    } else {
+      $(".responsive-fit").css("width",vWidth);
+    }
+  } else {
+    if (hWidth > 652) {
+      $(".responsive-fit").css("width",652);
+    } else {
+      $(".responsive-fit").css("width",hWidth);
+    }
+  }
+} else {
+  let starting_width = $( window ).width() - 40 ;
+  $(".responsive-fit").css({"width":starting_width+10,"padding-left":20});
+}
+
+$( window ).resize(function() {
+  if ( $(this).width() > 768) {
+    $(".responsive-fit").css("padding",0);
+    let x = this.innerWidth;
+    let y = this.innerHeight;
+    let verticalWidth = 0.75*y-50;
+    let horizontalWidth = x - 335 - 24;
+    if (verticalWidth < horizontalWidth) {
+      if (verticalWidth > 652) {
+        $(".responsive-fit").css("width",652);
+      } else {
+        $(".responsive-fit").css("width",verticalWidth);
+      }
+    } else {
+      if (horizontalWidth > 652) {
+        $(".responsive-fit").css("width",652);
+      } else {
+        $(".responsive-fit").css("width",horizontalWidth);
+      }
+    }
+  } else {
+    let x = $(this).width() - 40;
+    $(".responsive-fit").css({"width":x,"padding-left":20});
+  }
+
+  // if (y < 910) {
+  //   let newWidth = 0.75*y - 50;
+  //   $(".responsive-fit").css("width",newWidth);
+  // } else {
+  //   console.log("HELLO?");
+  //   $(".responsive-fit").css("width",652);
+  // }
+})
+</script>

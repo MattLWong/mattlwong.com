@@ -1,3 +1,4 @@
+name: Matt L Wong
 markdown: kramdown
 baseurl: mattwong.co
 exclude: ['README.md']

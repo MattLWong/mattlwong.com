@@ -88,6 +88,10 @@ ul.slider li {
   display: none;
 }
 
-.main {
+/*.main {
     padding: 0 10px;
+}*/
+
+.no-pager .bx-pager {
+  display: none;
 }

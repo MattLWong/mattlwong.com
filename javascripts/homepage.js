@@ -1,6 +1,6 @@
 jQuery(function($) {
     $('.slider').bxSlider({
-        adaptiveHeight: true,
+        adaptiveHeight: true
         // mode: 'fade'
         // auto: true
     });
@@ -8,5 +8,6 @@ jQuery(function($) {
         adaptiveHeight: true,
         mode: 'fade',
         auto: true
+        // randomStart: true;
     });
 });

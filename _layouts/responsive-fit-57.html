@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<div class="responsive-fit">
+  {{ content }}
+</div>
+
+
+<script type="text/javascript">
+let height = $( window ).innerHeight();
+let width = $( window ).innerWidth();
+let vWidth = 0.75 * height - 50 - 30;
+let hWidth = width - 335 - 24;
+
+if (vWidth < hWidth) {
+  if (vWidth > 652) {
+    $(".responsive-fit").css("width",652);
+  } else {
+    $(".responsive-fit").css("width",vWidth);
+  }
+} else {
+  if (hWidth > 652) {
+    $(".responsive-fit").css("width",652);
+  } else {
+    $(".responsive-fit").css("width",hWidth);
+  }
+}
+
+$( window ).resize(function() {
+
+  if ($(this).width() > 768){
+    let x = this.innerWidth;
+    let y = this.innerHeight;
+    let verticalWidth = 0.75 * y - 50 - 30;
+    let horizontalWidth = x - 335 - 24;
+    if (verticalWidth < horizontalWidth) {
+      if (verticalWidth > 622) {
+        $(".responsive-fit").css("width",622);
+      } else {
+        $(".responsive-fit").css("width",verticalWidth);
+      }
+    } else {
+      if (horizontalWidth > 622) {
+        $(".responsive-fit").css("width",622);
+      } else {
+        $(".responsive-fit").css("width",horizontalWidth);
+      }
+    }
+  } else {
+    $(".responsive-fit").css("width","")
+  }
+
+
+  // if (y < 910) {
+  //   let newWidth = 0.75*y - 50;
+  //   $(".responsive-fit").css("width",newWidth);
+  // } else {
+  //   console.log("HELLO?");
+  //   $(".responsive-fit").css("width",652);
+  // }
+})
+</script>
