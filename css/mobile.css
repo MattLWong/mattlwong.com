@@ -30,6 +30,7 @@
   .page-header .hamburger:before {
     margin-top: 14px;
   }
+
   .page-header .hamburger:before,
   .page-header .hamburger:after {
     background: #333;
