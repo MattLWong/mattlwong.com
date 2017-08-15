@@ -13,19 +13,26 @@ let width = $( window ).innerWidth();
 let vWidth = 0.75 * height - 50 - 30;
 let hWidth = width - 335 - 24;
 
-if (vWidth < hWidth) {
-  if (vWidth > 652) {
-    $(".responsive-fit").css("width",652);
+if (width > 968) {
+  if (vWidth < hWidth) {
+    if (vWidth > 652) {
+      $(".responsive-fit").css("width",652);
+    } else {
+      $(".responsive-fit").css("width",vWidth);
+    }
   } else {
-    $(".responsive-fit").css("width",vWidth);
+    if (hWidth > 652) {
+      $(".responsive-fit").css("width",652);
+    } else {
+      $(".responsive-fit").css("width",hWidth);
+    }
   }
 } else {
-  if (hWidth > 652) {
-    $(".responsive-fit").css("width",652);
-  } else {
-    $(".responsive-fit").css("width",hWidth);
-  }
+  let starting_width = $( window ).width() - 17 ;
+  $(".responsive-fit").css({"width":starting_width,"padding-left":0});
 }
+
+
 
 $( window ).resize(function() {
 
@@ -48,7 +55,8 @@ $( window ).resize(function() {
       }
     }
   } else {
-    $(".responsive-fit").css("width","")
+    let starting_width = $( window ).width() - 17 ;
+    $(".responsive-fit").css({"width":starting_width,"padding-left":0});
   }
 
 

@@ -28,8 +28,8 @@ if (width > 768 ) {
     }
   }
 } else {
-  let starting_width = $( window ).width() - 40 ;
-  $(".responsive-fit").css({"width":starting_width+10,"padding-left":20});
+  let starting_width = $( window ).width() - 17 ;
+  $(".responsive-fit").css({"width":starting_width,"padding-left":0});
 }
 
 $( window ).resize(function() {
@@ -53,8 +53,8 @@ $( window ).resize(function() {
       }
     }
   } else {
-    let x = $(this).width() - 40;
-    $(".responsive-fit").css({"width":x,"padding-left":20});
+    let x = $(this).width() - 17;
+    $(".responsive-fit").css({"width":x,"padding-left":0});
   }
 
   // if (y < 910) {

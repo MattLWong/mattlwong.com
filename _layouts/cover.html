@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<script type="text/javascript">
+
+
+
+
+$(document).ready(function() {
+  var width = $(window).width();
+  var mainWidth = width - 360;
+  var padding = mainWidth / 6;
+
+  if ( width > 999) {
+    $('.cover').css('padding-left', 111)
+  } else if (width > 768) {
+
+    console.log(padding);
+    $('.cover').css('padding-left', padding)
+  }
+
+  $( window ).resize(function() {
+    var width = $(window).width();
+    var mainWidth = width - 360;
+    var padding = mainWidth / 6;
+    if (width > 999) {
+      $('.cover').css('padding-left', 111)
+    } else if (width > 768) {
+      console.log(mainWidth);
+      $('.cover').css('padding-left', padding);
+    }
+  })
+})
+</script>

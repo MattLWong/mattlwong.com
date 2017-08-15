@@ -116,16 +116,6 @@ img {
 	width: inherit;
 }
 
-.wedding-cover {
-	padding-bottom: 18px;
-	padding-left: 100px;
-}
-
-.studio-cover {
-	padding-bottom: 18px;
-	padding-left: 80px;
-}
-
 .main a.read-more {
 	text-decoration: underline;
 	cursor: pointer;
@@ -134,6 +124,36 @@ img {
 .main a:hover {
 	color: grey;
 }
+
+
+.main .invisible {
+	display: none;
+}
+
+blockquote {
+	margin: 10px 40px 10px 20px;
+}
+
+/*------- BOTH WEDDINGS AND PROJECTS -----------*/
+
+.cover {
+  /*border: 1px solid red;*/
+  padding-bottom: 18px;
+}
+/*set their padding left in jquery*/
+
+/*----------PROJECTS ---------*/
+
+.projects-cover {
+  height: 350px;
+}
+
+/*---------- WEDDINGS ---------*/
+
+.weddings-cover {
+  height: 425px;
+}
+
 /*Wedding blurb is default invisible*/
 .main article.wedding-blurb {
 	/*background-color: yellow;*/
@@ -149,10 +169,8 @@ img {
 	z-index: 0;
 }
 
-.main .invisible {
-	display: none;
-}
+/* -------  CONTACT ---------*/
 
-blockquote {
-	margin: 10px 40px 10px 20px;
+.contact-email {
+  padding: 10px;
 }
