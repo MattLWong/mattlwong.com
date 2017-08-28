@@ -28,7 +28,8 @@ if (width > 768 ) {
     }
   }
 } else {
-  let starting_width = $( window ).width() - 17 ;
+  let starting_width = $( window ).width() - 8;
+  console.log(starting_width);
   $(".responsive-fit").css({"width":starting_width,"padding-left":0});
 }
 
@@ -53,16 +54,9 @@ $( window ).resize(function() {
       }
     }
   } else {
-    let x = $(this).width() - 17;
+    let x = $(this).width() - 19;
+    console.log(x);
     $(".responsive-fit").css({"width":x,"padding-left":0});
   }
-
-  // if (y < 910) {
-  //   let newWidth = 0.75*y - 50;
-  //   $(".responsive-fit").css("width",newWidth);
-  // } else {
-  //   console.log("HELLO?");
-  //   $(".responsive-fit").css("width",652);
-  // }
 })
 </script>
