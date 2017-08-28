@@ -1,3 +1,3 @@
-# mattwong.co
-A static website, with a blog and news about my career as a photographer. Powered by Jekyll.
+# mattlwong.com
+A static website, with a current blog about my life as a wedding and portrait photographer. Powered by Jekyll.
 pt src="https://ajax.go
