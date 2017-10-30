@@ -6,7 +6,8 @@ title: Homepage
 
 <div class="no-controls">
   <ul class="slider-auto">
-    <li><img src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/1.jpg" alt=""></li>
+    <li><img
+      id="first-image" src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/1.jpg" alt=""></li>
     <li><img src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/2.jpg" alt=""></li>
     <li><img src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/3.jpg" alt=""></li>
     <li><img src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/4.jpg" alt=""></li>
@@ -18,6 +19,12 @@ title: Homepage
     <li><img src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/10.jpg" alt=""></li>
     <li><img src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/11.jpg" alt=""></li>
     <li><img src="http://res.cloudinary.com/mwong9968/image/upload/v1508202137/mattlwong/front-page/12.jpg" alt=""></li>
-
   </ul>
 </div>
+
+<script type="text/javascript">
+  $('#first-image').load(function() {
+    console.log("the first image has loaded!");
+    $('.responsive-fit').css('display','block')
+  })
+</script>

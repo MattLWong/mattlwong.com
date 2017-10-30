@@ -179,3 +179,9 @@ blockquote {
 .contact-email {
   padding: 10px;
 }
+
+/*Responsive fit*/
+
+.responsive-fit {
+  display: none;
+}

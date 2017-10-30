@@ -8,6 +8,8 @@ layout: default
 
 
 <script type="text/javascript">
+
+
 let height = $( window ).innerHeight();
 let width = $( window ).innerWidth();
 let vWidth = 0.75 * height - 50;
@@ -15,17 +17,19 @@ let hWidth = width - 335 - 24;
 
 if (width > 768) {
   if (vWidth < hWidth) {
-    if (vWidth > 652) {
-      $(".responsive-fit").css("width",652);
-    } else {
-      $(".responsive-fit").css("width",vWidth);
-    }
+    $(".responsive-fit").css("width",vWidth);
+    // if (vWidth > 684) {
+    //   $(".responsive-fit").css("width",684);
+    // } else {
+    //   $(".responsive-fit").css("width",vWidth);
+    // }
   } else {
-    if (hWidth > 652) {
-      $(".responsive-fit").css("width",652);
-    } else {
-      $(".responsive-fit").css("width",hWidth);
-    }
+    $(".responsive-fit").css("width",hWidth);
+    // if (hWidth > 684) {
+    //   $(".responsive-fit").css("width",684);
+    // } else {
+    //   $(".responsive-fit").css("width",hWidth);
+    // }
   }
 } else {
   let starting_width = window.innerWidth - 15;
@@ -41,17 +45,20 @@ $( window ).resize(function() {
     let verticalWidth = 0.75*y-50;
     let horizontalWidth = x - 335 - 24;
     if (verticalWidth < horizontalWidth) {
-      if (verticalWidth > 652) {
-        $(".responsive-fit").css("width",652);
-      } else {
-        $(".responsive-fit").css("width",verticalWidth);
-      }
+      $(".responsive-fit").css("width",verticalWidth);
+      // if (verticalWidth > 684) {
+      //   $(".responsive-fit").css("width",684);
+      // } else {
+        // $(".responsive-fit").css("width",verticalWidth);
+      // }
     } else {
-      if (horizontalWidth > 652) {
-        $(".responsive-fit").css("width",652);
-      } else {
-        $(".responsive-fit").css("width",horizontalWidth);
-      }
+      $(".responsive-fit").css("width",horizontalWidth);
+
+      // if (horizontalWidth > 684) {
+      //   $(".responsive-fit").css("width",684);
+      // } else {
+      //   $(".responsive-fit").css("width",horizontalWidth);
+      // }
     }
   } else {
     let x = window.innerWidth - 15;
