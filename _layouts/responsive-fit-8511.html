@@ -9,7 +9,6 @@ layout: default
 
 <script type="text/javascript">
 
-
 let height = $( window ).innerHeight();
 let width = $( window ).innerWidth();
 let vWidth = 0.75 * height - 50;
@@ -18,18 +17,8 @@ let hWidth = width - 335 - 24;
 if (width > 768) {
   if (vWidth < hWidth) {
     $(".responsive-fit").css("width",vWidth);
-    // if (vWidth > 684) {
-    //   $(".responsive-fit").css("width",684);
-    // } else {
-    //   $(".responsive-fit").css("width",vWidth);
-    // }
   } else {
     $(".responsive-fit").css("width",hWidth);
-    // if (hWidth > 684) {
-    //   $(".responsive-fit").css("width",684);
-    // } else {
-    //   $(".responsive-fit").css("width",hWidth);
-    // }
   }
 } else {
   let starting_width = window.innerWidth - 15;
@@ -46,19 +35,9 @@ $( window ).resize(function() {
     let horizontalWidth = x - 335 - 24;
     if (verticalWidth < horizontalWidth) {
       $(".responsive-fit").css("width",verticalWidth);
-      // if (verticalWidth > 684) {
-      //   $(".responsive-fit").css("width",684);
-      // } else {
-        // $(".responsive-fit").css("width",verticalWidth);
-      // }
+
     } else {
       $(".responsive-fit").css("width",horizontalWidth);
-
-      // if (horizontalWidth > 684) {
-      //   $(".responsive-fit").css("width",684);
-      // } else {
-      //   $(".responsive-fit").css("width",horizontalWidth);
-      // }
     }
   } else {
     let x = window.innerWidth - 15;
@@ -66,4 +45,10 @@ $( window ).resize(function() {
     $(".responsive-fit").css({"width":x,"padding-left":0});
   }
 })
+
+$('#first-image').load(function() {
+  console.log("the first image has loaded!");
+  $('.responsive-fit').css('display','block')
+})
+
 </script>

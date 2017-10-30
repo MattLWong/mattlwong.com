@@ -6,7 +6,53 @@ layout: default
   {{ content }}
 </div>
 
+<script type="text/javascript">
 
+let height = $( window ).innerHeight();
+let width = $( window ).innerWidth();
+let vWidth = 0.70 * height - 50;
+let hWidth = width - 335 - 24;
+
+if (width > 768) {
+  if (vWidth < hWidth) {
+    $(".responsive-fit").css("width",vWidth);
+  } else {
+    $(".responsive-fit").css("width",hWidth);
+  }
+} else {
+  let starting_width = window.innerWidth - 15;
+  console.log(starting_width);
+  $(".responsive-fit").css({"width":starting_width,"padding-left":0});
+}
+
+$( window ).resize(function() {
+  if ( $(this).width() > 768) {
+    $(".responsive-fit").css("padding",0);
+    let x = this.innerWidth;
+    let y = this.innerHeight;
+    let verticalWidth = 0.7 * y - 50;
+    let horizontalWidth = x - 335 - 24;
+    if (verticalWidth < horizontalWidth) {
+      $(".responsive-fit").css("width",verticalWidth);
+
+    } else {
+      $(".responsive-fit").css("width",horizontalWidth);
+    }
+  } else {
+    let x = window.innerWidth - 15;
+    // console.log(x);
+    $(".responsive-fit").css({"width":x,"padding-left":0});
+  }
+})
+
+$('#first-image').load(function() {
+  console.log("the first image has loaded!");
+  $('.responsive-fit').css('display','block')
+})
+
+</script>
+
+<!--
 <script type="text/javascript">
 let height = $( window ).innerHeight();
 let width = $( window ).innerWidth();
@@ -60,4 +106,4 @@ $( window ).resize(function() {
     $(".responsive-fit").css({"width":starting_width,"padding-left":0});
   }
 })
-</script>
+</script> -->

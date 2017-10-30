@@ -82,7 +82,7 @@ h3 {
 
 .news-title {
   font-weight: 550;
-  color: #a53a22
+  font-style: italic;
 }
 
 /*Page-header*/
@@ -157,6 +157,11 @@ blockquote {
 
 .weddings-cover {
   height: 425px;
+}
+
+.link-to-highland {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
 }
 
 /*Wedding blurb is default invisible*/
