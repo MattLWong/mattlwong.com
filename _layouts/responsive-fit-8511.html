@@ -13,7 +13,7 @@ let width = $( window ).innerWidth();
 let vWidth = 0.75 * height - 50;
 let hWidth = width - 335 - 24;
 
-if (width > 768 ) {
+if (width > 768) {
   if (vWidth < hWidth) {
     if (vWidth > 652) {
       $(".responsive-fit").css("width",652);
@@ -28,7 +28,7 @@ if (width > 768 ) {
     }
   }
 } else {
-  let starting_width = $( window ).width() - 18;
+  let starting_width = window.innerWidth - 15;
   console.log(starting_width);
   $(".responsive-fit").css({"width":starting_width,"padding-left":0});
 }
@@ -54,8 +54,8 @@ $( window ).resize(function() {
       }
     }
   } else {
-    let x = $(this).width() - 19;
-    console.log(x);
+    let x = window.innerWidth - 15;
+    // console.log(x);
     $(".responsive-fit").css({"width":x,"padding-left":0});
   }
 })

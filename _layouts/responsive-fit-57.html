@@ -28,9 +28,8 @@ if (width > 768) {
     }
   }
 } else {
-  console.log("!");
-  let starting_width = $( window ).width() - 15 ;
-  console.log(starting_width);
+  let starting_width = window.innerWidth - 15 ;
+  console.log(starting_width)
   $(".responsive-fit").css({"width":starting_width,"padding-left":0});
 }
 
@@ -57,7 +56,7 @@ $( window ).resize(function() {
       }
     }
   } else {
-    let starting_width = $( window ).width() - 17 ;
+    let starting_width = window.innerWidth - 15 ;
     $(".responsive-fit").css({"width":starting_width,"padding-left":0});
   }
 })

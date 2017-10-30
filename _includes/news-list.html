@@ -1,8 +1,8 @@
 
-<div class="news-feed">  
+<div class="news-feed">
   {% for story in site.categories.news %}
   <div class="news-item">
-    <a href="{{site.baseurl}}{{story.url}}"><em>{{story.title}}</em></a>
+    <a class="news-title" href="{{site.baseurl}}{{story.url}}">{{story.title}}</a>
     <br>
     {{story.summary}}
     <br>

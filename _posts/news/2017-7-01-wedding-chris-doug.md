@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Wedding w/ Chris and Doug in Graton CA
-summary: I'm particularly proud this was the first wedding I shot completely by myself, and everything went out smoothly! I arrived at the wine tasting room at 10am, and promptly Doug, one of the two grooms, put me to work. I especially like that he had an idea of the shots he wanted. Putting on the boutonnieres, family groups, candids, all written down and an taken in a specific order. I captured 1318 images - a bit more than expected! They took me wine tasting afterword (they permitted me to drink the wines, which I thought was particularly one of the highlights). I caught a few images of the couple walking through the vineyard, which I thought was pretty cool since they were very interested in wine and had signed a cork made of hearts.
-location: Berkeley, CA
+summary: I'm particularly proud this was the first wedding I shot completely by myself, and everything went out smoothly! I arrived at the wine tasting room at 10am, and promptly Doug, one of the two grooms, put me to work. I especially like that he had an idea of the shots he wanted, which made my life a lot easier.
+location: Graton, CA
 time: Saturday, 1 July 2017
 category: news
 link:
