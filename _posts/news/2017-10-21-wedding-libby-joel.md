@@ -3,7 +3,7 @@ layout: default
 title: Wedding w/ Libby and Joel
 summary: "I got an email this morning at 9am from a wedding photographer, asking me to cover him as a second shooter. It came out of the blue, and without really thinking, I told him I could make it."
 location: San Jose, CA
-time: Wednesday, 21 October 2017
+time: Saturday, 21 October 2017
 priority: 1.0
 category: news
 link:
