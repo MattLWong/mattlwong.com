@@ -4,7 +4,7 @@ title: Wedding w/ Samantha and Kyle, Carmel CA
 meta:
 location: Carmel, CA
 time: Wednesday, 21 June 2017
-category: news
+category: private
 link:
 summary: Second shooter for a 25 person wedding in the hills of Carmel, CA. The setting was warm and idyllic. The couple, from France, dressed casually but looked great the men wore purple bow ties, the bridesmaids in dresses of varying shades of pink and mauve purple.
 ---

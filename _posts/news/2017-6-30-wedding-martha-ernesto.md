@@ -5,7 +5,7 @@ summary: I worked as third shooter for a ~50-75 person wedding in Lafayette, CA.
 location: Moraga, CA
 time: Friday, 30 June 2017
 priority: 1.0
-category: news
+category: private
 link:
 ---
 

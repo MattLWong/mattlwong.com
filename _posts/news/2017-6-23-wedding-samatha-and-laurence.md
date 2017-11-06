@@ -5,9 +5,9 @@ meta: A wedding in San Ramon, CA.
 location: San Ramon, CA
 time: Friday, 23 June 2017
 priority: 1.0
-category: news
+category: private
 link:
-summary: Arrived at 2:30pm. As the third shooter, I helped the second shooter with the groom's getting-ready, and took candids during the wedding ceremony and reception. The bride and groom were from Western and Persian cultures, which made for an interesting selection of music and themes. 
+summary: Arrived at 2:30pm. As the third shooter, I helped the second shooter with the groom's getting-ready, and took candids during the wedding ceremony and reception. The bride and groom were from Western and Persian cultures, which made for an interesting selection of music and themes.
 
 ---
 
